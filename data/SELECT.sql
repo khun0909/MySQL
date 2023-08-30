@@ -1,5 +1,5 @@
 -- 데이터베이스 연결(p184~)
-use emp_db ;  -- 데이터베이스 선택
+use emp_db ;
 
 --  일반 조회
 --  1. SELECT * FROM 테이블명(p187~);
@@ -229,5 +229,3 @@ set @json = "{'usertbl':[
 SELECT JSON_VALUE(@json, '$.usertbl[0].name') AS '첫번째 이름',
     JSON_VALUE(@json, '$.usertbl[1].name') AS '두번째 이름',
     JSON_VALUE(@json, '$.usertbl[2].name') AS '세번째 이름';
-
-
